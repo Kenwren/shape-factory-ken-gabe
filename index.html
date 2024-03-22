@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir ="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name ="author" content = "Gabe Ken">
+    <meta name = "description" content = "Webpage">
+    <meta name = "keywords" content ="html, css, web, web development, javascript">
+    <link rel = "icon" href ="./assets/img/favicon.png?v=2" type = "/x-icon">
+    <title>Shape Factory</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/reset.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <script type="module" src="./assets/script/script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Shape Factory</h1>
+        <form class="selection">
+          <select id="shape" class="select-shape" name="Shape">
+            <option value="0" disabled selected hidden>Shape</option>
+            <option value="circle">Circle</option>
+            <option value="square">Square</option>
+          </select>
+          <select id="color" class="select-color" name="Color">
+            <option value="0" disabled selected hidden>Color</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="orange">Orange</option>
+            <option value="pink">Pink</option>
+            <option value="purple">Purple</option>
+          </select>
+          <button type="button" class="btn create" id="createButton">Create</button>
+        </form>
+      <div class="display-box" id="display"></div>
+      <p class="info-text">Create shapes by selecting options and clicking "Create" :)</p>
+      <!-- <button class="btn clear">Clear</button> -->
+    </div>
+  </body>
+</html>

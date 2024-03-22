@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+:root {
+  --font-text:  #fff;
+}
+
+.container {
+  width: min(100% - 30px, 1080px);
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  font-family: "Open Sans", sans-serif,'Arial','Helvetica';
+  align-content: center;
+  background-color: #191720;
+  color: var(--font-text);
+  letter-spacing: 0.3px;
+}
+
+h1 {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+
+/*------------------------------------------*/
+/*              Create                      */
+/*------------------------------------------*/
+
+.selection {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+select {
+  width: 200px;
+  background-color: #27242e;
+  color: var(--font-text);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.btn {
+  background-color: #ee8232;
+  border-radius: 5px;
+  padding: 10px 25px;
+  color: var(--font-text);
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #d7762d;
+}
+
+
+/*------------------------------------------*/
+/*              Display                     */
+/*------------------------------------------*/
+
+.display-box {
+  background-color: #27242e;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  height: 360px;
+  width: 540px;
+  margin: 15px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.info-text{
+  color: var(--font-text);
+  margin: 10px;
+}
+
+.clear {
+  margin-top: 10px;
+}
+
+/*------------------------------------------*/
+/*              Shapes                      */
+/*------------------------------------------*/
+
+.circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.square {
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+  display: inline-block;
+  cursor: pointer;
+  margin: 10px;
+}
+
+
+/*------------------------------------------*/
+/*              Color                       */
+/*------------------------------------------*/
+
+.blue {background-color: #09f}
+.green {background-color: #9f0}
+.orange {background-color: #f90}
+.pink {background-color: #f09}
+.purple {background-color: #90f}
+
+
+/*------------------------------------------*/
+/*              Utility                     */
+/*------------------------------------------*/
+
+.space-around {
+  justify-content: space-around;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.flex {
+  display: flex;
+}
+
+.center {
+  align-content: center;
+}
+
+
